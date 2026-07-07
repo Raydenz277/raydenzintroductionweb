@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class=""><head><script>window.livecodes = window.livecodes || {};</script><title>Rayden website intro  (fork)</title><meta name="title" content="Rayden website intro  (fork)"><meta name="description" content="random 67 idk bahahaha"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><style id="__livecodes_styles__"></style><script src="https://cdn.jsdelivr.net/npm/es-module-shims@1.10.0/dist/es-module-shims.js" async=""></script><script type="importmap">{
+  "imports": {}
+}</script></head><body>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayden's Website</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;family=Architects+Daughter&amp;display=swap" rel="stylesheet">
+<style>
+  /* Reset & base styles */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0e6ff, #e0d5f0);
+    color: #4B0082;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  /* Background handwritten words - large, semi-transparent */
+  .background-words {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 10vw;
+    color: #b19cd9;
+    opacity: 0.67;
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
+
+  /* Container for all content, relative to background */
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header styles */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px 20px 20px;
+    position: relative;
+  }
+
+  .avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .title-line {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .title {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    color: #b19cd9;
+    margin: 0;
+    text-shadow: 1px 1px 4px white;
+  }
+
+  /* Horizontal decorative line extending */
+  .decor-line {
+    height: 2px;
+    background-color: #b19cd9;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 1px;
+    opacity: 0.7;
+  }
+
+  /* Spotify embed below header */
+  .spotify {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* Floating language toggle button */
+  #lang-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #b19cd9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s;
+    z-index: 10;
+  }
+  #lang-toggle:hover {
+    background: #cbb6ff;
+  }
+
+  /* Sections styles */
+  .section {
+    position: absolute;
+    width: 300px;
+    max-width: 80%;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+
+  /* Alternating positions for sections */
+  .left {
+    left: 10%;
+  }
+  .right {
+    right: 10%;
+  }
+
+  /* Large outlined headings with handwritten style */
+  .heading {
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #b19cd9;
+    -webkit-text-stroke: 1px #b19cd9;
+    position: relative;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px white;
+  }
+
+  /* Decorative large background word inside each section */
+  .decor-word {
+    position: absolute;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 12vw;
+    color: #b19cd9;
+    opacity: 0.05;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Animate fade-in on scroll */
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Spacing for large empty gaps between sections */
+  .spacer {
+    height: 150px;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 768px){
+    .section {
+      position: static;
+      width: 90%;
+      margin: 50px auto;
+    }
+    .background-words {
+      font-size: 15vw;
+    }
+  }
+</style>
+
+
+
+<!-- Background words -->
+<div class="background-words"></div>
+
+<!-- Main container -->
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <img src="https://file.garden/aJq2Giaxmw5Rgd97/t%E1%BA%A3i%20xu%E1%BB%91ng.jfif" alt="Profile" class="avatar">
+    <div class="title-line">
+      <h1 class="title">Rayden's Website</h1>
+      <div class="decor-line"></div>
+      <!-- Updated Spotify embed for "Pixel Galaxy" -->
+      <div class="spotify">
+        <iframe src="https://open.spotify.com/embed/track/3z9OnsnvM6SFN2dzrSDdVO?utm_source=generator&amp;si=a98917c3e08341df" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sections with staggered positions -->
+  <div id="sections-wrapper" style="position:relative; height:3000px;">
+    <!-- Sections will be injected here by JS -->
+  </div>
+
+</div>
+
+<!-- Language toggle button -->
+<button id="lang-toggle">🌐 Tiếng Việt</button>
+
+<script>
+  // Sample content in English & Vietnamese
+  const contentData = {
+    en: [
+      {
+        position: 'left',
+        title: 'About Me',
+        text: 'My name is Rayden/Cyn I dont have any prefer name so feel free to call me by both! Vietnamese Artist/Animator/coder and hobbyist My bday is 27/7! My prefer pronouns are he/they, I dont really mind if you use others pronouns for me | INFP (Fi–Ne–Si–Te) sx/sp 4w5 (4-6-9) EII  ELVF RLUAI Melancholic-Phlegmatic I↑ N↑ F↑ P↑ Chaotic Neutra'
+      },
+      {
+        position: 'right',
+        title: 'Interests',
+        text: '-demon lore and how different cultures portray demons :o, basically Im interested in Demonology (yes even the game from Roblox T-T) Typology -Music artist: Mitski,Alex G,Britney Spears, Shawn Wasabi,Snails house , Babymetal,Twice,... -I mostly listen to Kawaii future bass, Vocaloid,sad Indie,... -Fandoms Im in:MHA,Steven universe, Murder drones,Touhou, DDLC,I love Amy, ALNST, Vocalsynth, Regretvator, the owl house,... -I really really hyperfixtated on my oc, I might mention them a lot when talking so please let me know if you feel uncomfortable!'
+      },
+      {
+        position: 'left',
+        title: 'Interaction',
+        text: ' I have been officially diagnosed with ASD, I often miss social clues please be clear when you are talking with me and use tone tags!! '
+      
+      },
+      {
+        position: 'right',
+        title: 'Socials',
+        text: 'Discord: K3sha_sh3lly | Twitter: CyNn3sSa | Facebook: Milo đá xay'
+      },
+      {
+        position: 'left',
+        title: 'Fun Facts',
+        text: 'Favorite color: Pastel purple. I Likes black cats. .'
+      }
+    ],
+    vi: [
+      {
+        position: 'left',
+        title: 'About me ',
+        text: ' Tên mình là Rayden/ Cyn/Xay/Milo T không có tên gọi ưu tiên nên cứ gọi mình là Rayden hoặc Cyn đều được!  Artist / Animator / Coder / Hobbyist Sinh nhật: 27/7 INFP (Fi–Ne–Si–Te) sx/sp 4w5 (4-6-9) EII ELVF RLUAI Melancholic-Phlegmatic I↑ N↑ F↑ P↑ Chaotic Neutral '
+      },
+      {
+        position: 'right',
+        title: 'Sở thích',
+        text: 'Demonology (cả cái gêm trên rô lóc) Typology. Nghệ sĩ t thích: Mitski, Alex G, Britney Spears, Shawn Wasabi, Snails House, BABYMETAL, TWICE,...t chủ yếu nghe Kawaii Future Bass, Vocaloid, Sad Indie,... Fandom t tham gia: MHA, Steven Universe, Murder Drones, Touhou, DDLC, I Love Amy, ALNST, VocalSynth, Regretevator, The Owl House,...t cực kỳ hyperfixate vào các OC của t, nên có lẽ mình sẽ nhắc về họ rất nhiều khi nói chuyện. Nếu điều đó khiến b không thoải mái thì cứ nói với t nhé!'
+      },
+      {
+        position: 'left',
+        title: 'Tương tác',
+        text: 'được chẩn đoán  mắc ASD. T thường bỏ lỡ các tín hiệu xã hội, nên hãy nói chuyện rõ ràng với mình và nhớ dùng tone tags nhé! Đôi khi t vô tình seen tin nhắn. T có tính cách thất thường. Nào cảm thấy ổn hơn, t sẽ nhắn lại ngay, nên xin đừng hỏi t có ổn không hay những câu tương tự. Nếu giận t thì LÀM ƠN hãy nói ngay cho t biết t đã làm gì sai!!! T 0 thích người khác đào lại quá khứ của mình, kể cả những tranh cũ. Nếu b  thấy chúng thì hãy lờ đi và đừng bao giờ nhắc đến nữa .in bốc tui các bạn vô ntin thoải mái,tui ko phiền nhe, úp sọt tui đi.  '
+      },
+      {
+        position: 'right',
+        title: 'Mạng xã hội',
+        text: 'Discord: K3sha_sh3lly | Twitter: CyNn3sSa | Facebook: Milo đá xay'
+      },
+      {
+        position: 'left',
+        title: 'Fun Facts',
+        text: 'Màu yêu thích: Tím pastel. Thích meo meo  đen. .'
+      }
+    ]
+  };
+
+  const wrapper = document.getElementById('sections-wrapper');
+
+  function createSection(item) {
+    const sec = document.createElement('div');
+    sec.className = `section ${item.position}`;
+    // Random vertical position for asymmetry
+    sec.style.top = Math.random() * 150 + 100 + 'px';
+    // Add large handwritten background word
+    const decorWord = document.createElement('div');
+    decorWord.className = 'decor-word';
+    decorWord.innerText = item.title;
+    sec.appendChild(decorWord);
+    // Add large outlined heading
+    const heading = document.createElement('div');
+    heading.className = 'heading';
+    heading.innerText = item.title;
+    sec.appendChild(heading);
+    // Add text
+    const text = document.createElement('div');
+    text.innerHTML = item.text;
+    sec.appendChild(text);
+    // Animate on scroll
+    sec.style.opacity = 0;
+    return sec;
+  }
+
+  let currentLang = localStorage.getItem('lang') || 'en';
+
+  function renderSections() {
+    wrapper.innerHTML = '';
+    const data = contentData[currentLang];
+    data.forEach(item => {
+      const sec = createSection(item);
+      wrapper.appendChild(sec);
+    });
+    // Animate in
+    setTimeout(() => {
+      document.querySelectorAll('.section').forEach(s => {
+        s.classList.add('visible');
+        s.style.opacity = 1;
+        s.style.transform = 'translateY(0)';
+      });
+    }, 100);
+  }
+
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'vi' : 'en';
+    localStorage.setItem('lang', currentLang);
+    renderSections();
+    document.getElementById('lang-toggle').innerText = currentLang === 'en' ? '🌐 Tiếng Việt' : '🌐 English';
+  });
+
+  // Initialize
+  renderSections();
+
+  // Animate on scroll: fade-in effect
+  window.addEventListener('scroll', () => {
+    document.querySelectorAll('.section').forEach(sec => {
+      const rect = sec.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 50) {
+        sec.classList.add('visible');
+        sec.style.opacity = 1;
+        sec.style.transform = 'translateY(0)';
+      }
+    });
+  });
+</script>
+
+<script></script></body></html>
